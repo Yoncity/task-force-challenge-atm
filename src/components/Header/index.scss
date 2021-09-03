@@ -1,0 +1,29 @@
+.header_container {
+  margin: 10px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__logo {
+    background: #eee;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  &__balance {
+    display: flex;
+    align-items: center;
+    &__title {
+      margin-right: 15px;
+      font-size: 24px;
+    }
+    &__value {
+      vertical-align: middle;
+      font-weight: bold;
+      font-size: 48px;
+    }
+  }
+  &__logout {
+    background: #eee;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+}

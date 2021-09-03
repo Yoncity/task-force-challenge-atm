@@ -1,0 +1,56 @@
+.transactions_container {
+  display: flex;
+  padding: 20px 0 20px 20px;
+  flex-direction: column;
+  &__header {
+    margin-left: 15px;
+    flex: 1;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  &__body_header {
+    margin: 10px 0 0 15px;
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    p {
+      font-size: 18px;
+      color: #888;
+      font-weight: bold;
+      //   border: 1px solid black;
+      flex: 1;
+      &:last-child {
+        text-align: center;
+      }
+    }
+  }
+  &__body {
+    // border: 1px solid black;
+    margin-left: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    &__transaction {
+      display: flex;
+      padding: 5px;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: 0.1s linear;
+      p {
+        padding: 10px;
+        flex: 1;
+        font-size: 16px;
+        // border: 1px solid black;
+        &:last-child {
+          text-align: right;
+        }
+      }
+      &:nth-child(even) {
+        background-color: #eee;
+      }
+      &:hover {
+        background: #ccc;
+        transition: 0.1s linear;
+      }
+    }
+  }
+}

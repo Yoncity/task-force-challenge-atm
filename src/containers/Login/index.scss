@@ -1,0 +1,39 @@
+.login_container {
+  &__left {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    height: 100vh;
+    justify-content: center;
+    width: 40%;
+    margin: 0 auto;
+    &__error {
+      color: #f44336;
+      align-self: center;
+    }
+    &__card_details {
+      &__group {
+        display: flex;
+        label {
+          width: 100%;
+        }
+      }
+    }
+    input[type="submit"] {
+      // flex: 1;
+      padding: 10px 20px;
+      border: 1px solid #ddd;
+      background: #eee;
+      border-radius: 5px;
+      margin: 5px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    &__actions {
+      display: flex;
+      .proceedButton {
+        flex: 1;
+      }
+    }
+  }
+}
