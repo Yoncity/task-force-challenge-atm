@@ -3,17 +3,20 @@ type TransactionsModel = {
   amount: string;
   dateTime: string;
 };
+
 type ChequeModel = {
   no: string;
   amount: Number;
   active: boolean;
 };
+
 type CreditCard = {
   no: string;
   expiry: string;
   csv: string;
   blocked: Number;
 };
+
 export type UserModel = {
   firstName: string;
   lastName: string;
